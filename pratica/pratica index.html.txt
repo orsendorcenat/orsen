@@ -1,0 +1,17 @@
+!Doctype
+<html>
+<head>
+<title>ma puce</title>
+</head>
+<body>
+ de la zone de staging, sans supprimer les modifications.
+
+git reset --hard
+Cette commande est à utiliser avec extrème précaution, elle renvoit le dossier de travail au niveau du dernier commit. Toutes les modifications non commit seront perdues.
+
+git reset <commit> 
+Permet de revenir en arrière jusqu'au <commit>, réinitialise la zone de staging tout en laissant votre dossier de travail en l'état. L'historique sera perdu (les commits suivant <commit> seront perdus, mais pas vos modifications). Cette commande vous permet surtout de nettoyer l'historique en resoumettant un commit unique à la place de commit trop éparses.
+
+git reset <commit> --hard
+</body>
+</html>
